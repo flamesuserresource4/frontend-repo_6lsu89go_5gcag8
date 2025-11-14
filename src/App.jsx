@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import { ArrowRight, BookOpen, GraduationCap, Users, Star, Sparkles, Quote, Library, Trophy, Rocket } from 'lucide-react'
 import GlassCard from './components/GlassCard'
 
-const gradientBg =
-  'bg-[radial-gradient(1200px_600px_at_-10%_-10%,rgba(168,85,247,0.25),transparent_60%),radial-gradient(1000px_500px_at_110%_10%,rgba(59,130,246,0.25),transparent_60%),linear-gradient(180deg,#faf5ff,white)']
+// Simpler, esbuild-safe background using Tailwind's built-in gradient utilities
+const gradientBg = 'bg-gradient-to-b from-purple-50 to-white'
 
 const Section = ({ id, title, subtitle, children }) => (
   <section id={id} className="relative py-20 md:py-28">
